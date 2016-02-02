@@ -1,0 +1,39 @@
+<% include header.ejs %>
+<script src="/javascripts/updateTime.js"></script>
+<div class="container">
+<h2><%=user.realname%>的签到记录表</h2>
+<h3>累计签到<span style='color:red;'><%=signList.length%></span>次</h3>
+
+    <div>
+        <div >
+            <table>
+                <thead>
+                <tr>
+                    <th>日期</th>
+                    <th>签到时间</th>
+                    
+                </tr>
+                </thead>
+                <tbody>
+                <% signList.forEach(function (sign) {
+                %>
+                <tr <%
+                    if(sign.signStatus == "正常"){
+                        %>
+                        class="success"
+                        <%
+                    }
+                %>>
+                    <td><%=sign.signDate%></td>
+                    <td><%=sign.signInTime%></td>
+                </tr>
+                <%
+                })%>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+<% include footer.ejs%>

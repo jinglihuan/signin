@@ -1,0 +1,35 @@
+<% include header.ejs %>
+<script>
+    <% if(error){ %>
+    alert("<%=error%>");
+    <%}%>
+</script>
+
+<form action="/user/login" method="post">
+    <fieldset>
+        <div class="title">
+            <h3>员工签到登录系统</h3>
+        </div>
+        
+        <div>
+            账号
+            <div>
+                <input type="text" name="username" placeholder="请在此输入您的账号">
+            </div>
+        </div>
+        
+        <div>
+            密码
+            <div>
+                <input type="password" name="password" placeholder="请在此输入您的密码">
+            </div>
+        </div>
+
+        <div>
+            <button>登录</button>
+            <a href="/user/reg" style="margin-left: 30px;">还没有账号？马上注册！</a>
+       </div>
+    </fieldset>
+</form>
+
+<% include footer.ejs%>
