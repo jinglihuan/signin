@@ -1,11 +1,11 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  position: relative ;
+  	padding: 50px;
+  	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  	position: relative ;
 }
 
 a {
-  color: #00B7FF;
+  	color: #00B7FF;
 }
 
 .btn{ 
@@ -13,7 +13,6 @@ a {
 	height: 40px; 
 	background-color: red;
 	border-radius: 6px;
-
 }
 .btngray{
 	width: 80px;
@@ -30,6 +29,5 @@ a {
 	height: 40px; 
 	background-color:#C0d9d9;
 	border-radius: 6px;
-
 }
 
